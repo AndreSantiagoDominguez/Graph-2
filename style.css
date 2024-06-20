@@ -1,0 +1,162 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-image: url("imagenes/chis.jpg");
+  background-size: cover;
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  font-size: 17px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 30px;
+  background-image: url("imagenes/jaguar\ color.jpg");
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  gap: 150px;
+  flex-direction: row-reverse;
+}
+
+
+.input-section {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-location,
+.input-distance,
+.show-routes,
+.dijkstra-section {
+  background: rgba(255, 255, 255, 0.978); 
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-location label {
+  margin-top: 5px;
+  font-weight: bold;
+  width: 200px;
+}
+
+.input-distance label {
+  font-weight:bolder;
+  width: 200px;
+}
+
+.input-distance div{
+    margin-top: 30px;
+}
+
+.input-location-info,
+.info-firstZone,
+.information-second-zone,
+.information-three {
+  display: flex;
+}
+
+.input-location-info img {
+  width: 50px;
+  margin-left: 20px;
+  margin-bottom: 1px;
+}
+
+input {
+  font-size: 15px;
+  width: 500px;
+  border: none;
+  background: none;
+  outline: none;
+  border-bottom: 2px solid #46a172;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #559f78;
+  color: rgb(0, 0, 0);
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.4s;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #09451cdc;
+}
+
+.table-conections{
+  margin-top: 10px;
+  text-align: center;
+  margin-left: 130px;
+}
+
+#zonesTable {
+  width: 350px;
+  border-collapse: collapse;
+  background-color: rgb(200, 200, 210);
+}
+
+#zonesTable th, #zonesTable td {
+  border: 1px solid #000;
+  padding: 8px;
+}
+
+.dijkstra-result{
+  width: 350px;
+  border-collapse: collapse;
+  background-color: rgb(200, 200, 210);
+}
+
+#zonesTable th {
+  background-color: rgba(180, 180, 190, 0.444);
+  color: #000;
+}
+
+#zonesTable tr:nth-child(even) {
+  background-color: rgba(220, 220, 230, 0.442);
+}
+
+#zonesTable tr:hover {
+  background-color: rgb(170, 170, 180);
+}
+
+.actionsZone{
+  display: flex;
+}
+
+.show-routes label{
+  margin-right: 5px;
+  width: 350px;
+}
+
